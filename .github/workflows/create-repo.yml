@@ -19,7 +19,7 @@ jobs:
           curl -X POST \
             -H "Authorization: token ${{ secrets.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 }}" \
             -H "Accept: application/vnd.github.v3+json" \
-            https://api.github.com/orgs/YOUR_ORG/repos \
+            https://api.github.com/orgs/Goud-coder/repos \ 
             -d "{\"name\": \"$REPO_NAME\", \"private\": $( [ \"$VISIBILITY\" = 'Private' ] && echo true || echo false )}"
 
         env:
