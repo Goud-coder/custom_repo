@@ -1,0 +1,21 @@
+name: Repository Request
+description: Fill out the form to request a new repository creation.
+title: 'New Repository Request: {{ values.repository_name }}'
+body:
+  - type: input
+    id: repository_name
+    attributes:
+      label: Repository Name
+      description: Enter the name for the new repository
+      placeholder: my-new-repo
+      required: true
+
+  - type: dropdown
+    id: visibility
+    attributes:
+      label: Visibility
+      description: Is this repository public or private?
+      options:
+        - Public
+        - Private
+      required: true
